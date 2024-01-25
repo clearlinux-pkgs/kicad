@@ -7,7 +7,7 @@
 #
 Name     : kicad
 Version  : 7.0.10
-Release  : 1
+Release  : 2
 URL      : https://gitlab.com/kicad/code/kicad/-/archive/7.0.10/kicad-7.0.10.tar.bz2
 Source0  : https://gitlab.com/kicad/code/kicad/-/archive/7.0.10/kicad-7.0.10.tar.bz2
 Summary  : @PROJECT_DESCRIPTION@
@@ -29,6 +29,7 @@ BuildRequires : eigen-data
 BuildRequires : glew-dev
 BuildRequires : glibc-dev
 BuildRequires : glm-dev
+BuildRequires : ngspice-dev
 BuildRequires : openssl-dev
 BuildRequires : pkg-config
 BuildRequires : pkgconfig(cairo)
@@ -37,7 +38,6 @@ BuildRequires : pkgconfig(gtk+-3.0)
 BuildRequires : pkgconfig(harfbuzz)
 BuildRequires : pkgconfig(harfbuzz-icu)
 BuildRequires : pkgconfig(libunwind-ptrace)
-BuildRequires : pkgconfig(ngspice)
 BuildRequires : pkgconfig(odbc)
 BuildRequires : pkgconfig(pixman-1)
 BuildRequires : pypi(pybind11)
@@ -139,7 +139,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1706125732
+export SOURCE_DATE_EPOCH=1706219224
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -189,7 +189,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1706125732
+export SOURCE_DATE_EPOCH=1706219224
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kicad
 cp %{_builddir}/kicad-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/kicad/31a3d460bb3c7d98845187c716a30db81c44b615 || :
