@@ -1,0 +1,7 @@
+for dir in ../data/*; do
+	if [[ -d "${dir}" ]]; then
+		pushd "${dir}"
+		%make_install
+		popd
+	fi
+done

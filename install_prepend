@@ -1,0 +1,8 @@
+for dir in ../data/*; do
+	if [[ -d "${dir}" ]]; then
+		pushd "${dir}"
+		%cmake
+		make  %{?_smp_mflags}
+		popd
+	fi
+done
