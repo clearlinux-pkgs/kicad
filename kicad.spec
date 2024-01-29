@@ -7,7 +7,7 @@
 #
 Name     : kicad
 Version  : 7.0.10
-Release  : 4
+Release  : 6
 URL      : https://gitlab.com/kicad/code/kicad/-/archive/7.0.10/kicad-7.0.10.tar.bz2
 Source0  : https://gitlab.com/kicad/code/kicad/-/archive/7.0.10/kicad-7.0.10.tar.bz2
 Source1  : https://gitlab.com/kicad/libraries/kicad-footprints/-/archive/7.0.10/kicad-footprints-7.0.10.tar.gz
@@ -154,7 +154,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1706550419
+export SOURCE_DATE_EPOCH=1706571655
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -174,7 +174,7 @@ LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
 %cmake .. -DKICAD_BUILD_I18N=ON \
 -DKICAD_BUILD_QA_TESTS=OFF \
 -DKICAD_I18N_UNIX_STRICT_PATH=ON \
--DKICAD_INSTALL_DEMOS=ON \
+-DKICAD_INSTALL_DEMOS=OFF \
 -DKICAD_SCRIPTING_WXPYTHON=ON \
 -DKICAD_USE_EGL=ON \
 -DKICAD_USE_OCC=ON \
@@ -204,7 +204,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1706550419
+export SOURCE_DATE_EPOCH=1706571655
 rm -rf %{buildroot}
 ## install_prepend content
 for dir in ../data/*; do
@@ -378,209 +378,6 @@ done
 /usr/share/icons/hicolor/scalable/mimetypes/application-x-kicad-pcb.svg
 /usr/share/icons/hicolor/scalable/mimetypes/application-x-kicad-project.svg
 /usr/share/icons/hicolor/scalable/mimetypes/application-x-kicad-schematic.svg
-/usr/share/kicad/demos/complex_hierarchy/ampli_ht.kicad_sch
-/usr/share/kicad/demos/complex_hierarchy/complex_hierarchy.kicad_pcb
-/usr/share/kicad/demos/complex_hierarchy/complex_hierarchy.kicad_pro
-/usr/share/kicad/demos/complex_hierarchy/complex_hierarchy.kicad_sch
-/usr/share/kicad/demos/complex_hierarchy/complex_hierarchy_schlib.kicad_sym
-/usr/share/kicad/demos/complex_hierarchy/fp-lib-table
-/usr/share/kicad/demos/complex_hierarchy/sym-lib-table
-/usr/share/kicad/demos/custom_pads_test/custom_pads_schlib.kicad_sym
-/usr/share/kicad/demos/custom_pads_test/custom_pads_test.kicad_pcb
-/usr/share/kicad/demos/custom_pads_test/custom_pads_test.kicad_pro
-/usr/share/kicad/demos/custom_pads_test/custom_pads_test.kicad_sch
-/usr/share/kicad/demos/custom_pads_test/sym-lib-table
-/usr/share/kicad/demos/ecc83/3d_shapes/ecc83.wrl
-/usr/share/kicad/demos/ecc83/ecc83-pp.kicad_pcb
-/usr/share/kicad/demos/ecc83/ecc83-pp.kicad_pro
-/usr/share/kicad/demos/ecc83/ecc83-pp.kicad_sch
-/usr/share/kicad/demos/ecc83/ecc83-pp_v2.kicad_pcb
-/usr/share/kicad/demos/ecc83/ecc83-pp_v2.kicad_pro
-/usr/share/kicad/demos/ecc83/ecc83-pp_v2.kicad_sch
-/usr/share/kicad/demos/ecc83/ecc83_schlib.kicad_sym
-/usr/share/kicad/demos/ecc83/footprints.pretty/MountingHole_3.2mm_M3_DIN965_Pad.kicad_mod
-/usr/share/kicad/demos/ecc83/footprints.pretty/Valve_ECC-83-1.kicad_mod
-/usr/share/kicad/demos/ecc83/footprints.pretty/Valve_ECC-83-2.kicad_mod
-/usr/share/kicad/demos/ecc83/fp-lib-table
-/usr/share/kicad/demos/ecc83/sym-lib-table
-/usr/share/kicad/demos/electric/elec-unifil.kicad_sym
-/usr/share/kicad/demos/electric/electric.kicad_pro
-/usr/share/kicad/demos/electric/electric.kicad_sch
-/usr/share/kicad/demos/electric/sym-lib-table
-/usr/share/kicad/demos/flat_hierarchy/flat_hierarchy.kicad_pcb
-/usr/share/kicad/demos/flat_hierarchy/flat_hierarchy.kicad_pro
-/usr/share/kicad/demos/flat_hierarchy/flat_hierarchy.kicad_sch
-/usr/share/kicad/demos/flat_hierarchy/fp-lib-table
-/usr/share/kicad/demos/flat_hierarchy/libs/3d_shapes/adjustable_rx2v4.wrl
-/usr/share/kicad/demos/flat_hierarchy/libs/flat_hierarchy_schlib.kicad_sym
-/usr/share/kicad/demos/flat_hierarchy/libs/pic_programmer_fp.pretty/D_DO-35_SOD27_P7.62mm_Horizontal.kicad_mod
-/usr/share/kicad/demos/flat_hierarchy/libs/pic_programmer_fp.pretty/MountingHole_4.3mm_M4_DIN965.kicad_mod
-/usr/share/kicad/demos/flat_hierarchy/libs/pic_programmer_fp.pretty/RV2X4.kicad_mod
-/usr/share/kicad/demos/flat_hierarchy/libs/pic_programmer_fp.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.kicad_mod
-/usr/share/kicad/demos/flat_hierarchy/libs/pic_programmer_fp.pretty/TO-220-3_Horizontal_TabDown.kicad_mod
-/usr/share/kicad/demos/flat_hierarchy/libs/pic_programmer_fp.pretty/TO-92.kicad_mod
-/usr/share/kicad/demos/flat_hierarchy/pic_programmer.kicad_sch
-/usr/share/kicad/demos/flat_hierarchy/pic_sockets.kicad_sch
-/usr/share/kicad/demos/flat_hierarchy/sym-lib-table
-/usr/share/kicad/demos/interf_u/fp-lib-table
-/usr/share/kicad/demos/interf_u/interf_u.kicad_pcb
-/usr/share/kicad/demos/interf_u/interf_u.kicad_pro
-/usr/share/kicad/demos/interf_u/interf_u.kicad_sch
-/usr/share/kicad/demos/interf_u/interf_u.pretty/BUS_PC.kicad_mod
-/usr/share/kicad/demos/interf_u/interf_u.pretty/PGA120.kicad_mod
-/usr/share/kicad/demos/interf_u/interf_u.pretty/tux.kicad_mod
-/usr/share/kicad/demos/interf_u/interf_u_schlib.kicad_sym
-/usr/share/kicad/demos/interf_u/pagelayout_logo.kicad_wks
-/usr/share/kicad/demos/interf_u/sym-lib-table
-/usr/share/kicad/demos/interf_u/tux.bmp
-/usr/share/kicad/demos/interf_u/tux.kicad_sym
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/fp-lib-table
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/in_out_conn.kicad_sch
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/kit-coldfire_schlib.kicad_sym
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire-xilinx_5213.kicad_pcb
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire-xilinx_5213.kicad_pro
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire-xilinx_5213.kicad_sch
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire.pretty/FSUPCMS.kicad_mod
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire.pretty/JACK_ALIM.kicad_mod
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire.pretty/SM1206POL.kicad_mod
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire.pretty/SOT23EBC.kicad_mod
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire.pretty/SOT353.kicad_mod
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire.pretty/SW_PUSH_SMALL.kicad_mod
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire.pretty/SW_SPDT.kicad_mod
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/prj.3dshapes/Device.switch_toggle_horizontal_right_angle_PC_terminal.wings
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/prj.3dshapes/Device.switch_toggle_horizontal_right_angle_PC_terminal.wrl
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/prj.3dshapes/Jack.wings
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/prj.3dshapes/Jack.wrl
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/prj.3dshapes/db9_female_pin90deg.wrl
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/prj.3dshapes/push_butt_4pads.wings
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/prj.3dshapes/push_butt_4pads.wrl
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/sym-lib-table
-/usr/share/kicad/demos/kit-dev-coldfire-xilinx_5213/xilinx.kicad_sch
-/usr/share/kicad/demos/microwave/microwave.kicad_pcb
-/usr/share/kicad/demos/microwave/microwave.kicad_pro
-/usr/share/kicad/demos/microwave/shape1.txt
-/usr/share/kicad/demos/pic_programmer/fp-lib-table
-/usr/share/kicad/demos/pic_programmer/libs/3d_shapes/adjustable_rx2v4.wrl
-/usr/share/kicad/demos/pic_programmer/libs/3d_shapes/textool_40.wrl
-/usr/share/kicad/demos/pic_programmer/libs/pic_programmer_fp.pretty/40tex-Ell600.kicad_mod
-/usr/share/kicad/demos/pic_programmer/libs/pic_programmer_fp.pretty/RV2X4.kicad_mod
-/usr/share/kicad/demos/pic_programmer/libs/pic_programmer_schlib.kicad_sym
-/usr/share/kicad/demos/pic_programmer/pic_programmer.kicad_pcb
-/usr/share/kicad/demos/pic_programmer/pic_programmer.kicad_pro
-/usr/share/kicad/demos/pic_programmer/pic_programmer.kicad_sch
-/usr/share/kicad/demos/pic_programmer/pic_sockets.kicad_sch
-/usr/share/kicad/demos/pic_programmer/sym-lib-table
-/usr/share/kicad/demos/python_scripts_examples/action_menu_add_automatic_border.py
-/usr/share/kicad/demos/python_scripts_examples/action_menu_text_by_date.py
-/usr/share/kicad/demos/python_scripts_examples/action_plugin_test_undoredo.py
-/usr/share/kicad/demos/python_scripts_examples/gen_gerber_and_drill_files_board.py
-/usr/share/kicad/demos/python_scripts_examples/plot_board.py
-/usr/share/kicad/demos/simulation/laser_driver/ad8009.lib
-/usr/share/kicad/demos/simulation/laser_driver/fzt1049a.lib
-/usr/share/kicad/demos/simulation/laser_driver/laser.lib
-/usr/share/kicad/demos/simulation/laser_driver/laser_driver.kicad_pro
-/usr/share/kicad/demos/simulation/laser_driver/laser_driver.kicad_sch
-/usr/share/kicad/demos/simulation/laser_driver/laser_driver_schlib.kicad_sym
-/usr/share/kicad/demos/simulation/laser_driver/sym-lib-table
-/usr/share/kicad/demos/simulation/pspice/pspice.kicad_pro
-/usr/share/kicad/demos/simulation/pspice/pspice.kicad_sch
-/usr/share/kicad/demos/simulation/pspice/schematic_libspice.kicad_sym
-/usr/share/kicad/demos/simulation/pspice/sym-lib-table
-/usr/share/kicad/demos/simulation/rectifier/diode.mod
-/usr/share/kicad/demos/simulation/rectifier/rectifier.kicad_pro
-/usr/share/kicad/demos/simulation/rectifier/rectifier.kicad_sch
-/usr/share/kicad/demos/simulation/rectifier/rectifier_schlib.kicad_sym
-/usr/share/kicad/demos/simulation/rectifier/sym-lib-table
-/usr/share/kicad/demos/simulation/sallen_key/ad8051.lib
-/usr/share/kicad/demos/simulation/sallen_key/sallen_key.kicad_pro
-/usr/share/kicad/demos/simulation/sallen_key/sallen_key.kicad_sch
-/usr/share/kicad/demos/simulation/sallen_key/sallen_key_schlib.kicad_sym
-/usr/share/kicad/demos/simulation/sallen_key/sym-lib-table
-/usr/share/kicad/demos/simulation/subsheets/subsheet1.kicad_sch
-/usr/share/kicad/demos/simulation/subsheets/subsheet2.kicad_sch
-/usr/share/kicad/demos/simulation/subsheets/subsheets.kicad_sch
-/usr/share/kicad/demos/simulation/v_i_sources/sym-lib-table
-/usr/share/kicad/demos/simulation/v_i_sources/v_i_sources.kicad_pro
-/usr/share/kicad/demos/simulation/v_i_sources/v_i_sources.kicad_sch
-/usr/share/kicad/demos/simulation/v_i_sources/v_i_sources.kicad_sym
-"/usr/share/kicad/demos/sonde xilinx/fp-lib-table"
-"/usr/share/kicad/demos/sonde xilinx/sonde xilinx.kicad_pcb"
-"/usr/share/kicad/demos/sonde xilinx/sonde xilinx.kicad_pro"
-"/usr/share/kicad/demos/sonde xilinx/sonde xilinx.kicad_sch"
-"/usr/share/kicad/demos/sonde xilinx/sonde_xilinx_schlib.kicad_sym"
-"/usr/share/kicad/demos/sonde xilinx/sym-lib-table"
-/usr/share/kicad/demos/stickhub/3dmodels/APHB1608.step
-/usr/share/kicad/demos/stickhub/3dmodels/Crystal_SMD_4P_2520.step
-/usr/share/kicad/demos/stickhub/3dmodels/JST_SH_SM04B-SRSS-TB.STEP
-/usr/share/kicad/demos/stickhub/3dmodels/TDFN-8_1.5x2mm_Fused-Lead_MO-252-W2015D.step
-/usr/share/kicad/demos/stickhub/LICENSE.md
-/usr/share/kicad/demos/stickhub/README.md
-/usr/share/kicad/demos/stickhub/RobotProtos.kicad_sym
-/usr/share/kicad/demos/stickhub/StickHub.kicad_pcb
-/usr/share/kicad/demos/stickhub/StickHub.kicad_pro
-/usr/share/kicad/demos/stickhub/StickHub.kicad_sch
-/usr/share/kicad/demos/stickhub/footprints.pretty/1005_C.kicad_mod
-/usr/share/kicad/demos/stickhub/footprints.pretty/1006_C.kicad_mod
-/usr/share/kicad/demos/stickhub/footprints.pretty/1608_C.kicad_mod
-/usr/share/kicad/demos/stickhub/footprints.pretty/1P-1.5x1.5.kicad_mod
-/usr/share/kicad/demos/stickhub/footprints.pretty/2012_C.kicad_mod
-/usr/share/kicad/demos/stickhub/footprints.pretty/CP_Elec_6.3x11_Board_Edge_Mirrored.kicad_mod
-/usr/share/kicad/demos/stickhub/footprints.pretty/Creative_Commons_BY_Mask.kicad_mod
-/usr/share/kicad/demos/stickhub/footprints.pretty/Creative_Commons_CC_Mask.kicad_mod
-/usr/share/kicad/demos/stickhub/footprints.pretty/Creative_Commons_NC_Mask.kicad_mod
-/usr/share/kicad/demos/stickhub/footprints.pretty/Creative_Commons_SA_Mask.kicad_mod
-/usr/share/kicad/demos/stickhub/footprints.pretty/Crystal_4-SMD_2.5x2mm.kicad_mod
-/usr/share/kicad/demos/stickhub/footprints.pretty/Duo_LED_1.6x0.8_Kingbright_APHB1608LZGKSURKC.kicad_mod
-/usr/share/kicad/demos/stickhub/footprints.pretty/JP-2_1.5x1.5.kicad_mod
-/usr/share/kicad/demos/stickhub/footprints.pretty/JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.kicad_mod
-/usr/share/kicad/demos/stickhub/footprints.pretty/LQFP-48_7x7mm_P0.5mm.kicad_mod
-/usr/share/kicad/demos/stickhub/footprints.pretty/Plain_Hole_3mm.kicad_mod
-/usr/share/kicad/demos/stickhub/footprints.pretty/TDFN-8_1.5x2mm_Fused-Lead_JEDEC_MO-252_W2015D.kicad_mod
-/usr/share/kicad/demos/stickhub/footprints.pretty/USB_A_PCB_traces_small.kicad_mod
-/usr/share/kicad/demos/stickhub/fp-lib-table
-/usr/share/kicad/demos/stickhub/sym-lib-table
-/usr/share/kicad/demos/test_pads_inside_pads/connect.pretty/1pin.kicad_mod
-/usr/share/kicad/demos/test_pads_inside_pads/connect.pretty/1pin_thermal.kicad_mod
-/usr/share/kicad/demos/test_pads_inside_pads/fp-lib-table
-/usr/share/kicad/demos/test_pads_inside_pads/sym-lib-table
-/usr/share/kicad/demos/test_pads_inside_pads/test_pads_inside_pads.kicad_pcb
-/usr/share/kicad/demos/test_pads_inside_pads/test_pads_inside_pads.kicad_pro
-/usr/share/kicad/demos/test_pads_inside_pads/test_pads_inside_pads.kicad_sch
-/usr/share/kicad/demos/test_pads_inside_pads/test_pads_inside_pads_schlib.kicad_sym
-/usr/share/kicad/demos/test_xil_95108/carte_test.kicad_pcb
-/usr/share/kicad/demos/test_xil_95108/carte_test.kicad_pro
-/usr/share/kicad/demos/test_xil_95108/carte_test.kicad_sch
-/usr/share/kicad/demos/test_xil_95108/carte_test_schlib.kicad_sym
-/usr/share/kicad/demos/test_xil_95108/footprints.pretty/DIP-28__300__600_ELL.kicad_mod
-/usr/share/kicad/demos/test_xil_95108/footprints.pretty/PLCC84.kicad_mod
-/usr/share/kicad/demos/test_xil_95108/fp-lib-table
-/usr/share/kicad/demos/test_xil_95108/sym-lib-table
-/usr/share/kicad/demos/video/bus_pci.kicad_sch
-/usr/share/kicad/demos/video/esvideo.kicad_sch
-/usr/share/kicad/demos/video/fp-lib-table
-/usr/share/kicad/demos/video/graphic.kicad_sch
-/usr/share/kicad/demos/video/libs/footprints.pretty/BUSPCI.kicad_mod
-/usr/share/kicad/demos/video/libs/footprints.pretty/CV3-30PF.kicad_mod
-/usr/share/kicad/demos/video/libs/footprints.pretty/D_DO-34_SOD68_P7.62mm_Horizontal.kicad_mod
-/usr/share/kicad/demos/video/libs/footprints.pretty/LED_D3.0mm.kicad_mod
-/usr/share/kicad/demos/video/libs/footprints.pretty/LRTDK.kicad_mod
-/usr/share/kicad/demos/video/libs/footprints.pretty/PLCC68.kicad_mod
-/usr/share/kicad/demos/video/libs/footprints.pretty/PLCC84.kicad_mod
-/usr/share/kicad/demos/video/libs/footprints.pretty/SOT23EBC.kicad_mod
-/usr/share/kicad/demos/video/libs/footprints.pretty/SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm.kicad_mod
-/usr/share/kicad/demos/video/libs/footprints.pretty/sim72.kicad_mod
-/usr/share/kicad/demos/video/libs/footprints.pretty/subclick.kicad_mod
-/usr/share/kicad/demos/video/libs/fp.3dshapes/subclick_horiz.wings
-/usr/share/kicad/demos/video/libs/fp.3dshapes/subclick_horiz.wrl
-/usr/share/kicad/demos/video/libs/video_schlib.kicad_sym
-/usr/share/kicad/demos/video/modul.kicad_sch
-/usr/share/kicad/demos/video/muxdata.kicad_sch
-/usr/share/kicad/demos/video/pal-ntsc.kicad_sch
-/usr/share/kicad/demos/video/rams.kicad_sch
-/usr/share/kicad/demos/video/sym-lib-table
-/usr/share/kicad/demos/video/video.kicad_pcb
-/usr/share/kicad/demos/video/video.kicad_pro
-/usr/share/kicad/demos/video/video.kicad_sch
 /usr/share/kicad/footprints/Audio_Module.pretty/Reverb_BTDR-1H.kicad_mod
 /usr/share/kicad/footprints/Audio_Module.pretty/Reverb_BTDR-1V.kicad_mod
 /usr/share/kicad/footprints/Battery.pretty/BatteryClip_Keystone_54_D16-19mm.kicad_mod
