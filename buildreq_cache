@@ -1,8 +1,6 @@
-7.0.10
+7.0.11
 doxygen
-glew-dev
 glm-dev
-pkgconfig(ngspice)
-pypi(wx)
+glu-dev
 python3-dev
 wxWidgets-dev
