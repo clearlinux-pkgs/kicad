@@ -15,7 +15,7 @@ Source2  : https://gitlab.com/kicad/libraries/kicad-symbols/-/archive/8.0.0/kica
 Source3  : https://gitlab.com/kicad/libraries/kicad-templates/-/archive/8.0.0/kicad-templates-8.0.0.tar.gz
 Summary  : @PROJECT_DESCRIPTION@
 Group    : Development/Tools
-License  : APSL-2.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSL-1.0 CC-BY-NC-SA-3.0 CC-BY-NC-SA-4.0 CC-BY-SA-3.0 CC-BY-SA-4.0 CC0-1.0 CERN-OHL-S-2.0 ClArtistic GPL-2.0 GPL-3.0 HPND ICU ISC MIT Zlib
+License  : APSL-2.0 Apache-2.0 BSD-2-Clause BSD-3-Clause BSL-1.0 CC0-1.0 CERN-OHL-S-2.0 ClArtistic GPL-2.0 GPL-3.0 HPND ICU ISC MIT Zlib
 Requires: kicad-bin = %{version}-%{release}
 Requires: kicad-data = %{version}-%{release}
 Requires: kicad-lib = %{version}-%{release}
