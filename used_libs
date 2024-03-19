@@ -35,7 +35,6 @@ libgtk-3.so.0
 libharfbuzz.so.0
 libm.so.6
 libodbc.so.2
-libpixman-1.so.0
 libpython3.12.so.1.0
 libstdc++.so.6
 libwayland-client.so.0
