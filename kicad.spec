@@ -7,7 +7,7 @@
 #
 Name     : kicad
 Version  : 8.0.5
-Release  : 15
+Release  : 16
 URL      : https://gitlab.com/kicad/code/kicad/-/archive/8.0.5/kicad-8.0.5.tar.gz
 Source0  : https://gitlab.com/kicad/code/kicad/-/archive/8.0.5/kicad-8.0.5.tar.gz
 Source1  : https://gitlab.com/kicad/libraries/kicad-footprints/-/archive/8.0.5/kicad-footprints-8.0.5.tar.gz
