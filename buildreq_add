@@ -2,6 +2,7 @@
 # picked up automatically. One name per line, no whitespace.
 OpenCASCADE-dev
 ngspice-dev
+nng-dev
 pypi-wxPython-python3
 swig
 wxWidgets-dev

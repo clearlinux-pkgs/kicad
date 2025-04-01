@@ -14,6 +14,7 @@ libTKMesh.so.7
 libTKPrim.so.7
 libTKRWMesh.so.7
 libTKSTEP.so.7
+libTKSTL.so.7
 libTKShHealing.so.7
 libTKTopAlgo.so.7
 libTKXCAF.so.7
@@ -21,6 +22,9 @@ libTKXDEIGES.so.7
 libTKXDESTEP.so.7
 libTKXSBase.so.7
 libTKernel.so.7
+libabsl_hash.so.2407.0.0
+libabsl_log_internal_message.so.2407.0.0
+libabsl_log_internal_nullguard.so.2407.0.0
 libc.so.6
 libcairo.so.2
 libcurl.so.4
@@ -35,8 +39,11 @@ libgobject-2.0.so.0
 libgtk-3.so.0
 libharfbuzz.so.0
 libm.so.6
+libnng.so.1
 libodbc.so.2
+libprotobuf.so.25.3.0
 libpython3.13.so.1.0
+libsecret-1.so.0
 libstdc++.so.6
 libwayland-client.so.0
 libwx_baseu-3.2.so.0
@@ -49,3 +56,4 @@ libwx_gtk3u_html-3.2.so.0
 libwx_gtk3u_propgrid-3.2.so.0
 libwx_gtk3u_stc-3.2.so.0
 libz.so.1
+libzstd.so.1
